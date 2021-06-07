@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css.css">
+    <!-- <link rel="stylesheet" href="css/scrollbar.css"> -->
+    <title>Lil Peep</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="img/peep.png" alt="">
+        </a>
+        
+        <ul>
+            <li><a href="#">Ses musiques</a></li>
+            <li><a href="#">Son histoire</a></li>
+            <li><a href="#">La GBC</a></li>
+        </ul>
+    </header>
+    
+    <div class="container">
+
+        <video autoplay loop muted>
+                <source src="video/brightside.mp4" type="video/mp4">
+    
+        </video>
+            
+        
+    <section class="intro">
+            <h1>Découvrez l'histoire émouvante de Lil Peep</h1>
+            <p class="ml3">De son ascension fulgurante à sa fin tragique, découvrez un artiste touchant de par sa sincérité et sa passion pour la musique</p>
+    </section>
+    
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="js/textlanding.js"></script>
+    <script>
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    })
+    </script>
+
+</body>
+</html>
